@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+
+.card-3d {
+  width: 250px;
+  height: 300px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-front {
+  background: #fff;
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  background: #facc15;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  cursor: url('/bee-cursor.png'), auto !important;
+}
+
+.cursor-custom *,
+.cursor-custom *::before,
+.cursor-custom *::after {
+  cursor: url('/bee-cursor.png'), auto !important;
+}
+
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 6s ease-in-out infinite;
+
+}
+.perspective {
+  perspective: 1000px;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+.transform-style {
+  transform-style: preserve-3d;
+}
+.gold-text {
+  color: #DAA520;
+  text-shadow: 0 0 4px #DAA520, 0 0 10px black;
+}
+
+
+:root {
+  --bg: #fff;
+  --text: #000;
+  --card-bg: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="dark"] {
+  --bg: #1a1a1a;
+  --text: #f7f7f7;
+  --card-bg: rgba(40, 40, 40, 0.8);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
