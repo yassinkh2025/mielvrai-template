@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/yassinkh2025/mielvrai-template/main/public/preview.png" alt="MielVrai Preview" style="max-width: 100%; border-radius: 12px;" />
+</p>
+
+<p align="center">
+  <a href="https://sayath-mielvrai.netlify.app">
+    <img src="https://api.netlify.com/api/v1/badges/4ad546f6-cf41-4e3e-94c3-6a1f35b8f4b4/deploy-status" alt="Netlify Status" />
+  </a>
+</p>
+
 # 🍯 MielVrai — Template de landing page professionnelle (React + TypeScript + TailwindCSS)
 
 **MielVrai** est un template de landing page responsive, conçu pour démontrer des compétences modernes en développement front-end avec React, Tailwind CSS, GSAP et TypeScript. Il intègre des animations fluides, une expérience utilisateur engageante et un design adapté au mobile comme au desktop.
@@ -42,7 +52,22 @@ Il est idéal comme démonstration de savoir-faire en développement web front-e
 
 ## 📁 Structure du projet
 
-*(À compléter si besoin, exemple de structure de fichiers ou dossier `src/`)*
+mes-projets/
+├── public/
+│ └── preview.png
+├── src/
+│ ├── components/
+│ │ ├── FlyingBees.tsx
+│ │ ├── StickyScrollBackground.tsx
+│ │ ├── MagicMenu.tsx
+│ │ ├── MagicBurgerMenu.tsx
+│ ├── Landing.tsx
+│ ├── App.tsx
+│ └── main.tsx
+├── index.css
+└── README.md
+
+
 
 ---
 
@@ -68,8 +93,7 @@ Ce projet a été développé pour :
 Projet open-source à but démonstratif.  
 Pour un usage commercial ou sur mesure → contactez-moi.
 
-📧 contact@mielvrai.com
-
+📧 yassinkhaldi385@gmail.com
 ---
 
 ## 👤 Auteur
